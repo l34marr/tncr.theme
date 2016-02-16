@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+      name="tncr.theme"
+      interface="tncr.theme.interfaces.ITncrThemeLayer"
+      />
+</layers>

@@ -1,0 +1,6 @@
+[report]
+include =
+    src/tncr/*
+omit =
+    */test*
+    */upgrades/*

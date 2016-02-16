@@ -1,0 +1,3 @@
+graft src/tncr
+graft docs/
+include *.cfg *.rst *.in
