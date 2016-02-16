@@ -1,10 +1,10 @@
 <configure
-    xmlns="http://namespaces.zope.org/zope"
-    xmlns:five="http://namespaces.zope.org/five"
-    xmlns:plone="http://namespaces.plone.org/plone"
-    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    xmlns:i18n="http://namespaces.zope.org/i18n"
-    i18n_domain="tncr.theme">
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:five="http://namespaces.zope.org/five"
+  xmlns:plone="http://namespaces.plone.org/plone"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  xmlns:i18n="http://namespaces.zope.org/i18n"
+  i18n_domain="tncr.theme">
 
   <includeDependencies package="." />
 
@@ -13,24 +13,22 @@
   <include package=".browser" />
 
   <plone:static
-      directory="theme"
-      type="theme"
-      name="tncr.theme"
-      />
+    name="tncr.theme"
+    directory="theme"
+    type="theme" />
 
   <genericsetup:registerProfile
-      name="default"
-      title="tncr.theme"
-      directory="profiles/default"
-      description="Installs the tncr.theme add-on."
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
+    name="default"
+    title="TNCR Theme"
+    directory="profiles/default"
+    description="TNCR Theme Package"
+    provides="Products.GenericSetup.interfaces.EXTENSION" />
 
   <genericsetup:importStep
-      name="tncr.theme-postInstall"
-      title="tncr.theme post_install import step"
-      description="Post install import step from tncr.theme"
-      handler=".setuphandlers.post_install">
+    name="tncr.theme-postInstall"
+    title="TNCR Theme Post Install"
+    description="TNCR Theme Post Install Import Step"
+    handler=".setuphandlers.post_install">
   </genericsetup:importStep>
 
 </configure>
