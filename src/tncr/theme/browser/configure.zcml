@@ -1,7 +1,14 @@
 <configure
   xmlns="http://namespaces.zope.org/zope"
   xmlns:browser="http://namespaces.zope.org/browser"
-  xmlns:plone="http://namespaces.plone.org/plone"
   i18n_domain="tncr.theme">
+
+  <browser:page
+    for="*"
+    name="tinymce-jsonconfiguration"
+    class=".tinymce.TinyMCEBrowserView"
+    permission="zope2.View"
+    attribute="jsonConfiguration"
+    layer="..interfaces.ITncrThemeLayer" />
 
 </configure>
