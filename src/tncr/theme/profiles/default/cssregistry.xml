@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<object name="portal_css" meta_type="Stylesheets Registry">
+
+ <stylesheet
+  id="tncr.css"
+  insert-before="ploneCustom.css"
+  cacheable="True" compression="safe" cookable="True"
+  enabled="on" expression=""
+  media="screen" rel="stylesheet" rendering="link" />
+
+ <stylesheet
+  id="responsive.css"
+  insert-before="ploneCustom.css"
+  cacheable="True" compression="safe" cookable="True"
+  enabled="on" expression=""
+  media="screen" rel="stylesheet" rendering="link" />
+ 
+</object>
