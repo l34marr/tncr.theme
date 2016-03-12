@@ -3,12 +3,19 @@
   xmlns:browser="http://namespaces.zope.org/browser"
   i18n_domain="tncr.theme">
 
-  <browser:page
-    for="*"
-    name="tinymce-jsonconfiguration"
-    class=".tinymce.TinyMCEBrowserView"
-    permission="zope2.View"
-    attribute="jsonConfiguration"
-    layer="..interfaces.ITncrThemeLayer" />
+ <browser:viewlet
+  name="plone.htmlhead.title"
+  manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
+  class=".viewlets.TitleViewlet"
+  permission="zope2.View"
+  layer="tncr.theme.interfaces.ITncrThemeLayer" />
+
+ <browser:page
+  for="*"
+  name="tinymce-jsonconfiguration"
+  class=".tinymce.TinyMCEBrowserView"
+  permission="zope2.View"
+  attribute="jsonConfiguration"
+  layer="..interfaces.ITncrThemeLayer" />
 
 </configure>
