@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #portal-footer-wrapper {
-  background: #fff url(++theme++tncr/img/footer.jpg) no-repeat bottom;
+  background: #fff url(++theme++tncr/img/footer.jpg) no-repeat;
   text-align: center;
   font-size: 75%;
 }
@@ -97,8 +97,12 @@ dl.portlet dd.portletFooter {
 }
 
 /* for atcontents */
+#content {
+  margin: 1em 0.5em 2em 0.75em;
+}
 #content .documentDescription {
   margin-bottom: 10px;
+  font: 1.25em "Helvetica Neue", Arial, FreeSans, sans-serif;
 }
 #content p {
   margin-bottom: 2px;
