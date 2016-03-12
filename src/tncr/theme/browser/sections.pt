@@ -1,0 +1,67 @@
+<tal:sections i18n:domain="tncr.theme">
+<p class="hiddenStructure" i18n:translate="heading_sections">Navigation</p>
+
+<ul id="portal-globalnav"
+ tal:define="root_url context/@@plone_portal_state/navigation_root_url">
+ <li id="portaltab-index_html">
+  <a href="#"
+   tal:attributes="href string:${root_url}"
+   i18n:translate="">
+    Home</a>
+ </li>
+ <li id="portaltab-assets" class="plain">
+  <a href="#"
+   tal:attributes="href string:${root_url}/resrc#b_start=0&c6=歷史建築"
+   i18n:translate="">
+    Monument</a>
+ </li>
+ <li id="portaltab-assets" class="plain">
+  <a href="#"
+   tal:attributes="href string:${root_url}/resrc#b_start=0&c6=古蹟"
+   i18n:translate="">
+    Relic</a>
+ </li>
+ <li id="portaltab-assets" class="plain">
+  <a href="#"
+   tal:attributes="href string:${root_url}/resrc#b_start=0&c6=遺址"
+   i18n:translate="">
+    Ruin</a>
+ </li>
+ <li id="portaltab-assets" class="plain">
+  <a href="#"
+   tal:attributes="href string:${root_url}/resrc#b_start=0&c6=文化景觀"
+   i18n:translate="">
+    Landscape</a>
+ </li>
+ <li id="portaltab-assets" class="plain">
+  <a href="#"
+   tal:attributes="href string:${root_url}/resrc#b_start=0&c6=聚落"
+   i18n:translate="">
+    Settlement</a>
+ </li>
+ <li id="portaltab-assets" class="plain">
+  <a href="#"
+   tal:attributes="href string:${root_url}/temple"
+   i18n:translate="">
+    Temple</a>
+ </li>
+ <li id="portaltab-assets" class="plain">
+  <a href="#"
+   tal:attributes="href string:${root_url}/house"
+   i18n:translate="">
+    House</a>
+ </li>
+ <li id="portaltab-assets" class="plain">
+  <a href="#"
+   tal:attributes="href string:${root_url}/tree"
+   i18n:translate="">
+    Tree</a>
+ </li>
+ <li id="portaltab-info" class="plain">
+  <a href="#"
+   tal:attributes="href string:${root_url}/news"
+   i18n:translate="">
+    Info</a>
+ </li>
+</ul>
+</tal:sections>

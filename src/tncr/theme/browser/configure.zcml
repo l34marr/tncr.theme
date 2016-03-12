@@ -19,6 +19,14 @@
   layer="tncr.theme.interfaces.ITncrThemeLayer" />
 
  <browser:viewlet
+  name="plone.global_sections"
+  manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+  class="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
+  template="sections.pt"
+  permission="zope2.View"
+  layer="tncr.theme.interfaces.ITncrThemeLayer" />
+
+ <browser:viewlet
   name="plone.footer"
   manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
   class="plone.app.layout.viewlets.common.FooterViewlet"
