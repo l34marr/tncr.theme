@@ -1,41 +1,43 @@
 <configure
-  xmlns="http://namespaces.zope.org/zope"
-  xmlns:five="http://namespaces.zope.org/five"
-  xmlns:browser="http://namespaces.zope.org/browser"
-  xmlns:plone="http://namespaces.plone.org/plone"
-  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-  xmlns:i18n="http://namespaces.zope.org/i18n"
-  i18n_domain="tncr.theme">
+ xmlns="http://namespaces.zope.org/zope"
+ xmlns:cmf="http://namespaces.zope.org/cmf"
+ xmlns:browser="http://namespaces.zope.org/browser"
+ xmlns:plone="http://namespaces.plone.org/plone"
+ xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+ xmlns:i18n="http://namespaces.zope.org/i18n"
+ i18n_domain="tncr.theme">
 
-  <includeDependencies package="." />
+ <includeDependencies package="." />
 
-  <i18n:registerTranslations directory="locales" />
+ <i18n:registerTranslations directory="locales" />
 
-  <include package=".browser" />
+ <include package=".browser" />
 
-  <plone:static
-    name="tncr"
-    directory="resources"
-    type="theme" />
+ <cmf:registerDirectory name="tncr_theme" />
 
-  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
-  <include package="z3c.jbot" file="meta.zcml" />
-  <browser:jbot
-    directory="overrides"
-    layer="tncr.theme.interfaces.ITncrThemeLayer" />
+ <plone:static
+  name="tncr"
+  directory="resources"
+  type="theme" />
 
-  <genericsetup:registerProfile
-    name="default"
-    title="TNCR Theme"
-    directory="profiles/default"
-    description="TNCR Theme Package"
-    provides="Products.GenericSetup.interfaces.EXTENSION" />
+ <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+ <include package="z3c.jbot" file="meta.zcml" />
+ <browser:jbot
+  directory="overrides"
+  layer="tncr.theme.interfaces.ITncrThemeLayer" />
 
-  <genericsetup:importStep
-    name="tncr.theme-postInstall"
-    title="TNCR Theme Post Install"
-    description="TNCR Theme Post Install Import Step"
-    handler=".setuphandlers.post_install">
-  </genericsetup:importStep>
+ <genericsetup:registerProfile
+  name="default"
+  title="TNCR Theme"
+  directory="profiles/default"
+  description="TNCR Theme Package"
+  provides="Products.GenericSetup.interfaces.EXTENSION" />
+
+ <genericsetup:importStep
+  name="tncr.theme-postInstall"
+  title="TNCR Theme Post Install"
+  description="TNCR Theme Post Install Import Step"
+  handler=".setuphandlers.post_install">
+ </genericsetup:importStep>
 
 </configure>
