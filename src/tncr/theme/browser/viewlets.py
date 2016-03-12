@@ -18,3 +18,11 @@ class TitleViewlet(TitleViewlet):
                       default='TNCR GIS'),
             self.page_title)
 
+
+class LogoViewlet(LogoViewlet):
+    """Custom Logo
+    """
+    def update(self):
+        super(LogoViewlet, self).update()
+        self.logo_tag = '<img src="' + self.navigation_root_url + '/++theme++tncr/img/logo.png" alt="Logo File">'
+
