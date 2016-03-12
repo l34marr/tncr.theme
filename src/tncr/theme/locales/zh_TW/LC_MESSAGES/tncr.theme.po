@@ -1,53 +1,50 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: tncr.theme\n"
 "POT-Creation-Date: 2016-03-12 04:35+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2016-03-12 12:40+0800\n"
+"Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
+"Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"Language-Code: en\n"
-"Language-Name: English\n"
+"Language-Code: zh-tw\n"
+"Language-Name: Traditional Chinese\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: tncr.theme\n"
 
 #: ./browser/sections.pt:7
 msgid "Home"
-msgstr ""
+msgstr "首頁"
 
 #: ./browser/sections.pt:49
 msgid "House"
-msgstr ""
+msgstr "老屋"
 
 #: ./browser/sections.pt:61
 msgid "Info"
-msgstr ""
+msgstr "訊息快遞"
 
 #: ./browser/sections.pt:31
 msgid "Landscape"
-msgstr ""
+msgstr "文化景觀"
 
 #: ./browser/sections.pt:13
 msgid "Monument"
-msgstr ""
+msgstr "歷史建築"
 
 #: ./browser/sections.pt:19
 msgid "Relic"
-msgstr ""
+msgstr "古蹟"
 
 #: ./browser/sections.pt:25
 msgid "Ruin"
-msgstr ""
+msgstr "遺址"
 
 #: ./browser/sections.pt:37
 msgid "Settlement"
-msgstr ""
+msgstr "聚落"
 
 #: ./configure.zcml:34
 msgid "TNCR Theme"
@@ -59,18 +56,18 @@ msgstr ""
 
 #: ./browser/sections.pt:43
 msgid "Temple"
-msgstr ""
+msgstr "寺廟"
 
 #: ./browser/sections.pt:55
 msgid "Tree"
-msgstr ""
+msgstr "老樹"
 
 #. Default: "Best viewed with 1024x768 resolution in Internet Explorer 7.0 / Firefox 3.6 or higher"
 #: ./browser/footer.pt:6
 msgid "best_viewed"
-msgstr ""
+msgstr "‧最佳瀏覽狀態：Internet Explorer 7.0 或 Firefox 3.6 以上版本 ‧最佳螢幕解析度：1024x768"
 
 #. Default: "Navigation"
 #: ./browser/sections.pt:2
 msgid "heading_sections"
-msgstr ""
+msgstr "導覽"
