@@ -1,0 +1,12 @@
+<div class="row"
+ metal:define-macro="portal_footer"
+ i18n:domain="tncr.theme">
+ <div class="cell width-full position-0">
+  <p style="margin-top: 10px">
+   <span i18n:translate="best_viewed">
+    Best viewed with 1024x768 resolution
+    in Internet Explorer 7.0 / Firefox 3.6 or higher
+   </span>
+  </p>
+ </div>
+</div>

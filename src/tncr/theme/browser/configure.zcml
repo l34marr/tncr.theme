@@ -10,6 +10,14 @@
   permission="zope2.View"
   layer="tncr.theme.interfaces.ITncrThemeLayer" />
 
+ <browser:viewlet
+  name="plone.footer"
+  manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+  class="plone.app.layout.viewlets.common.FooterViewlet"
+  template="footer.pt"
+  permission="zope2.View"
+  layer="tncr.theme.interfaces.ITncrThemeLayer" />
+
  <browser:page
   for="*"
   name="tinymce-jsonconfiguration"
