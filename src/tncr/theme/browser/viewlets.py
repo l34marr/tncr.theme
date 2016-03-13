@@ -2,8 +2,10 @@
 #-*- encoding: utf-8 -*-
 
 from zope.i18n import translate
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.app.layout.viewlets.common import TitleViewlet
 from plone.app.layout.viewlets.common import LogoViewlet
+from plone.app.layout.links.viewlets import FaviconViewlet
 
 
 class TitleViewlet(TitleViewlet):
@@ -17,6 +19,12 @@ class TitleViewlet(TitleViewlet):
                       context=self.request,
                       default='TNCR GIS'),
             self.page_title)
+
+
+class FaviconViewlet(FaviconViewlet):
+    """Custom Favicon
+    """
+    _template = ViewPageTemplateFile('favicon.pt')
 
 
 class LogoViewlet(LogoViewlet):
