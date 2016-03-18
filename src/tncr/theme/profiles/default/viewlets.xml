@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<object>
+ <order manager="plone.belowcontenttitle" skinname="TNCR Theme" base-on="Plone Default">
+  <viewlet name="plone.belowcontenttitle.keywords" insert-before="*" />
+ </order>
+ <hidden manager="plone.belowcontent" skinname="TNCR Theme">
+  <viewlet name="plone.belowcontenttitle.keywords" />
+ </hidden>
+</object>

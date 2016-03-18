@@ -42,6 +42,14 @@
   permission="zope2.View"
   layer="tncr.theme.interfaces.ITncrThemeLayer" />
 
+ <!-- Move Keywords to BelowContentTitle Manager -->
+ <browser:viewlet
+  name="plone.belowcontenttitle.keywords"
+  manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+  template="keywords.pt"
+  permission="zope2.View"
+  layer="tncr.theme.interfaces.ITncrThemeLayer" />
+
  <browser:page
   for="*"
   name="tinymce-jsonconfiguration"
