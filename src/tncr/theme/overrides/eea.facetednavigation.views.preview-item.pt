@@ -4,7 +4,7 @@
      useViewTypes context/portal_properties/site_properties/typesUseViewActionInListings;
      useView python:portal_type in useViewTypes;
      categories context/Subject|nothing;">
- <a href="#" style="border-bottom: initial; height: 125px"
+ <a href="#" style="border-bottom: initial; height: 134px"
   tal:define="title context/pretty_title_or_id|string:;
       description context/Description|string:;
       desc_or_title python:description or title;
@@ -25,11 +25,10 @@
   </span>
   <span class="photoAlbumEntryTitle" tal:content="context/pretty_title_or_id|string:">Title</span>
  </a>
- <div class="documentByLine" tal:condition="categories">
-  <tal:filedunder i18n:translate="label_filed_under">Filed under:</tal:filedunder>
+ <div id="eea-ctgr" class="documentByLine" tal:condition="categories">
   <span tal:repeat="category categories">
-   <span tal:content="category">Category</span>
-   <span class="separator" tal:condition="not: repeat/category/end">,</span>
+   <span class="link-category" tal:content="category">Category</span>
+   <span style="display: none" tal:condition="not: repeat/category/end">,</span>
   </span>
  </div>
 </div>

@@ -111,24 +111,11 @@ figure {
   margin-bottom: 10px;
 }
 
-/* for temple_folder */
-.templeAlbumEntry {
-  float: left;
-  position: relative;
-  overflow: hidden;
-  height: 85px;
-  width: 143px;
-  margin: 0em;
-  padding: 0px 6px 0px 9px;
-  text-align: center;
-  background: #fff url(++theme++tncr/img/polaroid.png) no-repeat top left;
-}
-.templeAlbumEntryWrapper {
-  height: 30px;
-  width: 128px;
-  margin-bottom: 7px;
-}
-.templeAlbumEntryTitle {
-  display: block;
-  margin-top: 2em;
+/* for eea */
+#eea-ctgr .link-category {
+  padding: 0.25em 0.5em;
+  background: #ddd;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
 }
