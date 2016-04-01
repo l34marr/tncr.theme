@@ -111,8 +111,8 @@ figure {
   margin-bottom: 10px;
 }
 
-/* for eea */
-#eea-ctgr .link-category {
+/* for category keywords */
+#ctgr .kw-category {
   padding: 0.25em 0.5em;
   background: #ddd;
   border-radius: 0.5em;
