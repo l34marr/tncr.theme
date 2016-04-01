@@ -11,31 +11,31 @@
  </li>
  <li id="portaltab-assets" class="plain">
   <a href="#"
-   tal:attributes="href string:${root_url}/resrc#b_start=0&c6=歷史建築"
+   tal:attributes="href string:${root_url}/monument"
    i18n:translate="">
     Monument</a>
  </li>
  <li id="portaltab-assets" class="plain">
   <a href="#"
-   tal:attributes="href string:${root_url}/resrc#b_start=0&c6=古蹟"
+   tal:attributes="href string:${root_url}/relic"
    i18n:translate="">
     Relic</a>
  </li>
  <li id="portaltab-assets" class="plain">
   <a href="#"
-   tal:attributes="href string:${root_url}/resrc#b_start=0&c6=遺址"
+   tal:attributes="href string:${root_url}/ruin"
    i18n:translate="">
     Ruin</a>
  </li>
  <li id="portaltab-assets" class="plain">
   <a href="#"
-   tal:attributes="href string:${root_url}/resrc#b_start=0&c6=文化景觀"
+   tal:attributes="href string:${root_url}/landscape"
    i18n:translate="">
     Landscape</a>
  </li>
  <li id="portaltab-assets" class="plain">
   <a href="#"
-   tal:attributes="href string:${root_url}/resrc#b_start=0&c6=聚落"
+   tal:attributes="href string:${root_url}/settlement"
    i18n:translate="">
     Settlement</a>
  </li>
