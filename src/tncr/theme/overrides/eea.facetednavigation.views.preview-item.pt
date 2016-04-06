@@ -26,6 +26,7 @@
  <span class="photoAlbumEntryTitle" tal:content="context/pretty_title_or_id|string:">Title</span>
  <div id="ctgr" class="documentByLine" tal:condition="python:level or dstrct or categories">
   <span class="kw-category" tal:condition="level" tal:content="level">Level</span>
+  <span class="kw-category" tal:condition="dstrct" tal:content="dstrct">District</span>
   <span tal:repeat="category categories">
    <span class="kw-category" tal:content="category">Category</span>
    <span style="display: none" tal:condition="not: repeat/category/end">,</span>
@@ -45,6 +46,7 @@
  <span class="photoAlbumEntryTitle" tal:content="context/pretty_title_or_id|string:">Title</span>
  <div id="ctgr" class="documentByLine" tal:condition="python:level or dstrct or categories">
   <span class="kw-category" tal:condition="level" tal:content="level">Level</span>
+  <span class="kw-category" tal:condition="dstrct" tal:content="dstrct">District</span>
   <span tal:repeat="category categories">
    <span class="kw-category" tal:content="category">Category</span>
    <span style="display: none" tal:condition="not: repeat/category/end">,</span>
