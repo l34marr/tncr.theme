@@ -111,6 +111,11 @@ figure {
   margin-bottom: 10px;
 }
 
+/* eea facetednavigation */
+.photoAlbumEntryTitle {
+  height: initial;
+}
+
 /* for category keywords */
 #ctgr .kw-category {
   padding: 0.25em 0.5em;
